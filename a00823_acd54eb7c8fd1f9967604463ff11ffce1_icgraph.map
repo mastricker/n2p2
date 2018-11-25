@@ -1,0 +1,9 @@
+<map id="nnp::ElementMap::atomicNumber" name="nnp::ElementMap::atomicNumber">
+<area shape="rect" id="node2" href="$a00899.html#a3045446d90de7531df14fd05bd6b1f59" title="Calculate all symmetry functions of this group for one atom. " alt="" coords="282,5,478,46"/>
+<area shape="rect" id="node3" href="$a00919.html#a242a9cd8fa9fbba8aef26d1301e692f2" title="Calculate symmetry function for one atom. " alt="" coords="272,70,488,111"/>
+<area shape="rect" id="node4" href="$a00895.html#a4552f06c1bbe08ef454249219be4b024" title="Calculate all symmetry functions of this group for one atom. " alt="" coords="282,135,478,177"/>
+<area shape="rect" id="node5" href="$a00915.html#a31d0414c851eac7c35a33272149a9e19" title="Calculate symmetry function for one atom. " alt="" coords="272,201,488,242"/>
+<area shape="rect" id="node6" href="$a00823.html#abbaa1f40d96f9b6da0a8ac9563b7cb95" title="Check if arguments are sorted according to atomic number. " alt="" coords="289,266,471,307"/>
+<area shape="rect" id="node7" href="$a00927.html#a060058c539f0f581afe587db81d1e200" title="Initialize the LAMMPS interface. " alt="" coords="304,331,456,373"/>
+<area shape="rect" id="node8" href="$a00831.html#a259303c95ae2f64f2b192de1b2df51f5" title="Set up the element map. " alt="" coords="282,397,478,424"/>
+</map>

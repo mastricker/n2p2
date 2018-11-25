@@ -1,0 +1,16 @@
+<map id="nnp::split" name="nnp::split">
+<area shape="rect" id="node2" href="$a00819.html#a5ac5a68040c23e4548f5819e8466cfa9" title="Add one symmetry function. " alt="" coords="142,5,330,46"/>
+<area shape="rect" id="node3" href="$a00863.html#a9d8474b4633b73815022742af96b0a77" title="Read configuration from file. " alt="" coords="142,71,330,97"/>
+<area shape="rect" id="node4" href="$a00823.html#a17d6d160054a064199a8757eb62b3350" title="Extract all elements and store in element map. " alt="" coords="149,122,323,163"/>
+<area shape="rect" id="node5" href="$a00903.html#abb23fef9bf357d74c3c1543f3398eff4" title="Set symmetry function parameters. " alt="" coords="137,187,335,229"/>
+<area shape="rect" id="node6" href="$a00919.html#a3214a430f41f2bddd9f554652f0e59e3" title="Set symmetry function parameters. " alt="" coords="128,253,344,294"/>
+<area shape="rect" id="node7" href="$a00875.html#aee48813a5a4b9551ba7f4c5eed2ba434" title="Set symmetry function parameters. " alt="" coords="133,318,339,359"/>
+<area shape="rect" id="node8" href="$a00915.html#a8f52a626e02b8e3be863bebf7e4b7d28" title="Set symmetry function parameters. " alt="" coords="128,383,344,425"/>
+<area shape="rect" id="node9" href="$a00871.html#aa94bce88e4c482f2e4ed8460b474e535" title="Set symmetry function parameters. " alt="" coords="133,449,339,490"/>
+<area shape="rect" id="node10" href="$a00867.html#a250e6ab7eb1e43c079946baac1ce503d" title="Set symmetry function scaling type. " alt="" coords="155,514,317,555"/>
+<area shape="rect" id="node11" href="$a00831.html#ae72c03926dc7ea9b8f43770fb5861ccf" title="Set up cutoff function for all symmetry functions. " alt="" coords="157,580,315,607"/>
+<area shape="rect" id="node12" href="$a00831.html#afc4e43a8f905900eb4ea153d529053ec" title="Set up all Element instances. " alt="" coords="147,631,325,657"/>
+<area shape="rect" id="node13" href="$a00831.html#a3488a7fb2b0ccf17a9b2af514590f57c" title="Set up neural networks for all elements. " alt="" coords="131,681,341,708"/>
+<area shape="rect" id="node14" href="$a00831.html#a091fea0011ed8260c93db7c38c3d1e82" title="Set up neural network weights from files. " alt="" coords="131,733,341,774"/>
+<area shape="rect" id="node15" href="$a00831.html#ad0080b25ea49cdd6ce085162751a379b" title="Set up all symmetry functions. " alt="" coords="145,798,327,839"/>
+</map>

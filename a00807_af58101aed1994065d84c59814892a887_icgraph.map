@@ -1,0 +1,4 @@
+<map id="nnp::Atom::free" name="nnp::Atom::free">
+<area shape="rect" id="node2" href="$a00863.html#af289c389f76b4981aef3c92300aa668d" title="Clear neighbor list of all atoms. " alt="" coords="165,5,379,32"/>
+<area shape="rect" id="node3" href="$a00927.html#a28d41810dc652d5cdf1db90035e8d495" title="(Re)set structure to contain only local LAMMPS atoms. " alt="" coords="196,57,348,98"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="nnp::ElementMap::size" name="nnp::ElementMap::size">
+<area shape="rect" id="node2" href="$a00927.html#a060058c539f0f581afe587db81d1e200" title="Initialize the LAMMPS interface. " alt="" coords="461,27,613,68"/>
+<area shape="rect" id="node3" href="$a00863.html#abf6bf40715b7ffd70707baf5e95746ce" title="Reset everything but elementMap. " alt="" coords="241,34,383,61"/>
+<area shape="rect" id="node4" href="$a00863.html#a57c375126ca37e8d390d406091e7dd5a" title="Set element map of structure. " alt="" coords="211,85,413,112"/>
+<area shape="rect" id="node5" href="$a00831.html#a259303c95ae2f64f2b192de1b2df51f5" title="Set up the element map. " alt="" coords="214,136,410,162"/>
+<area shape="rect" id="node6" href="$a00831.html#afc4e43a8f905900eb4ea153d529053ec" title="Set up all Element instances. " alt="" coords="223,186,401,213"/>
+<area shape="rect" id="node7" href="$a00863.html#a7eaa3ccba6309f828c2444ee627d7ee5" title="Write configuration to POSCAR file. " alt="" coords="224,238,400,279"/>
+</map>

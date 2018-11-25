@@ -1,0 +1,7 @@
+<map id="nnp::Prediction::readStructureFromFile" name="nnp::Prediction::readStructureFromFile">
+<area shape="rect" id="node2" href="$a00863.html#aaa794cf49a53d8e5db578ac303b700fd" title="Read configuration from file. " alt="" coords="259,5,447,32"/>
+<area shape="rect" id="node3" href="$a00831.html#aa8ddf0701dbcd60868955ca556892bc5" title="nnp::Mode::removeEnergyOffset" alt="" coords="248,56,459,83"/>
+<area shape="rect" id="node4" href="$a00863.html#abf6bf40715b7ffd70707baf5e95746ce" title="Reset everything but elementMap. " alt="" coords="283,107,424,133"/>
+<area shape="rect" id="node5" href="$a00863.html#a57c375126ca37e8d390d406091e7dd5a" title="Set element map of structure. " alt="" coords="252,157,455,184"/>
+<area shape="rect" id="node6" href="$a00863.html#acd39fe39b2b0e86e676c7bd52dc2b835" title="Normalize structure, shift energy and change energy and length unit. " alt="" coords="259,209,448,250"/>
+</map>

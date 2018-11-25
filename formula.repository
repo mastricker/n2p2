@@ -1,0 +1,113 @@
+\form#0:$\vec{\mathbf{a}}, \vec{\mathbf{b}}, \vec{\mathbf{c}}$
+\form#1:\[ G^2_i = \sum_{j \neq i} \mathrm{e}^{-\eta(r_{ij} - r_\mathrm{s})^2} f_c(r_{ij}) \]
+\form#2:\[ G^3_i = 2^{1-\zeta} \sum_{\substack{j,k\neq i \\ j < k}} \left( 1 + \lambda \cos \theta_{ijk} \right)^\zeta \mathrm{e}^{-\eta( r_{ij}^2 + r_{ik}^2 + r_{jk}^2 ) } f_c(r_{ij}) f_c(r_{ik}) f_c(r_{jk}) \]
+\form#3:\[ G^9_i = 2^{1-\zeta} \sum_{\substack{j,k\neq i \\ j < k}} \left( 1 + \lambda \cos \theta_{ijk} \right)^\zeta \mathrm{e}^{-\eta( r_{ij}^2 + r_{ik}^2 ) } f_c(r_{ij}) f_c(r_{ik}) \]
+\form#4:$r_s$
+\form#5:\[ G^{12}_i = \sum_{j \neq i} Z_j \, \mathrm{e}^{-\eta(r_{ij} - r_\mathrm{s})^2} f_c(r_{ij}) \]
+\form#6:\[ G^{13}_i = 2^{1-\zeta} \sum_{\substack{j,k\neq i \\ j < k}} Z_j Z_k \, \left( 1 + \lambda \cos \theta_{ijk} \right)^\zeta \mathrm{e}^{-\eta \left[ (r_{ij} - r_s)^2 + (r_{ik} - r_s)^2 + (r_{jk} - r_s)^2 \right] } f_c(r_{ij}) f_c(r_{ik}) f_c(r_{jk}) \]
+\form#7:$y^{k}_{i}$
+\form#8:$k$
+\form#9:\[ y^{k}_{i} = f_a \left( b^{k}_{i} + \sum_{j=1}^{n_l} a^{lk}_{ji} \, y^{l}_{j} \right), \]
+\form#10:\[ y^{k}_{i} = f_a \left( \frac{b^{k}_{i} + \sum_{j=1}^{n_l} a^{lk}_{ji} \, y^{l}_{j}}{n_l} \right). \]
+\form#11:$\alpha$
+\form#12:$\alpha = 0.0$
+\form#13:$S_{\min}$
+\form#14:$S_{\max}$
+\form#15:$10^{-4}$
+\form#16:$i$
+\form#17:\[ \left(\frac{\partial G_1}{\partial x_{i,\alpha}}, \ldots, \frac{\partial G_n}{\partial x_{i,\alpha}}\right), \]
+\form#18:$\{G_j\}_{j=1,\ldots,n}$
+\form#19:$x_{i,\alpha}$
+\form#20:$ \frac{\partial G_i}{\partial \alpha_j} $
+\form#21:$G_i$
+\form#22:$\alpha_j$
+\form#23:$ \alpha = x,y,z $
+\form#24:$ j $
+\form#25:$ r_{ci} := \alpha \, r_c$
+\form#26:$1$
+\form#27:$ f_c(r) = \begin{cases} 1, & \text{for } 0 \le r < r_{ci} \\ f(x), & \text{for } r_{ci} \le r < r_c \text{ where } x := \frac{r - r_{ci}}{r_c - r_{ci}} \\ 0 & \text{for } r \geq r_c \end{cases} $
+\form#28:$r_c$
+\form#29:$f_c$
+\form#30:$\frac{d f_c}{d r}$
+\form#31:$\frac{1}{r_c}$
+\form#32:$\frac{1}{r_c - r_{ci}}$
+\form#33:$f(x) = 1$
+\form#34:$f(x) = \frac{1}{2} \left[ \cos (\pi x) + 1\right] $
+\form#35:$f_c(r) = \tanh^3 \left(1 - \frac{r}{r_c} \right) $
+\form#36:$f_c(r) = c \tanh^3 \left(1 - \frac{r}{r_c} \right),\, f(0) = 1 $
+\form#37:$f(x) = e^{-\frac{1}{1 - x^2}}$
+\form#38:$f(x) = (2x - 3)x^2 + 1$
+\form#39:$f(x) = ((15 - 6x)x - 10) x^3 + 1$
+\form#40:$f(x) = (x(x(20x - 70) + 84) - 35)x^4 + 1$
+\form#41:$f(x) = (x(x((315 - 70x)x - 540) + 420) - 126)x^5 + 1$
+\form#42:\[ \underbrace{ \overbrace{ a^{01}_{00}, \ldots, a^{01}_{0m_1}, a^{01}_{10}, \ldots, a^{01}_{1m_1}, \ldots, a^{01}_{n_00}, \ldots, a^{01}_{n_0m_1}, }^{\text{Weights}} \overbrace{ b^{1}_{0}, \ldots, b^{1}_{m_1} }^{\text{Biases}} }_{\text{Layer } 0 \rightarrow 1}, \underbrace{ a^{12}_{00}, \ldots, b^{2}_{m_2} }_{\text{Layer } 1 \rightarrow 2}, \ldots, \underbrace{ a^{p-1,p}_{00}, \ldots, b^{p}_{m_p} }_{\text{Layer } p-1 \rightarrow p} \]
+\form#43:$a^{i-1, i}_{jk}$
+\form#44:$j$
+\form#45:$i-1$
+\form#46:$b^{i}_{k}$
+\form#47:$[-1, 1]$
+\form#48:$\left(\frac{dE}{dG_i}\right)_{i=1,\ldots,N}$
+\form#49:$E$
+\form#50:$\left(G_i\right)_{i=1,\ldots,N}$
+\form#51:$N$
+\form#52:$\left(\frac{dE}{dc_i}\right)_{i=1,\ldots,N}$
+\form#53:$\left(c_i\right)_{i=1,\ldots,N}$
+\form#54:$\frac{\partial G_j} {\partial x_{l, \gamma}}$
+\form#55:$\gamma$
+\form#56:$x,y,z$
+\form#57:$l$
+\form#58:\[ F_{l, \gamma} = - \frac{\partial}{\partial x_{l, \gamma}} \sum_i^{N} E_i = - \sum_i^N \sum_j^M \frac{\partial E_i}{\partial G_j} \frac{\partial G_j}{\partial x_{l, \gamma}}, \]
+\form#59:$M$
+\form#60:$F_{l, \gamma}$
+\form#61:$c_n$
+\form#62:\[ \frac{\partial}{\partial c_n} F_{l, \gamma} = - \sum_i^N \sum_j^M \frac{\partial^2 E_i}{\partial c_n \partial G_j} \frac{\partial G_j}{\partial x_{l, \gamma}}. \]
+\form#63:$\frac{\partial G_j}{\partial x_{l, \gamma}}$
+\form#64:\[ \sum_j^M \frac{\partial^2 E}{\partial c_n \partial G_j} \frac{\partial G_j}{\partial x_{l, \gamma}} \]
+\form#65:\[ \underbrace{y^0_1, \ldots, y^0_{N_0}}_\text{Input layer}, \underbrace{y^1_1, \ldots, y^1_{N_1}}_{\text{Hidden Layer } 1}, \ldots, \underbrace{y^p_1, \ldots, y^p_{N_p}}_\text{Output layer}, \]
+\form#66:$y^m_i$
+\form#67:$m$
+\form#68:$N_m$
+\form#69:$f_a(x) = x$
+\form#70:$f_a(x) = \tanh(x)$
+\form#71:$f_a(x) = 1 / (1 + \mathrm{e}^{-x})$
+\form#72:$f_a(x) = \ln (1 + \mathrm{e}^x)$
+\form#73:$\left[-1, 1\right]$
+\form#74:$\left[\frac{-1}{\sqrt{n_\text{in}}}, \frac{1}{\sqrt{n_\text{in}}}\right]$
+\form#75:$n_\text{in}$
+\form#76:$\left[-\sqrt{\frac{6}{n_\text{in} + n_\text{out}}}, \sqrt{\frac{6}{n_\text{in} + n_\text{out}}}\right]$
+\form#77:$n_\text{out}$
+\form#78:$\sigma$
+\form#79:$ \frac{\partial f_a}{\partial x} $
+\form#80:$ \frac{\partial^2 f_a}{\partial x^2} $
+\form#81:$ y_i^n $
+\form#82:$ b_{i}^{n} $
+\form#83:$ \frac{\partial x}{\partial G} $
+\form#84:$n$
+\form#85:$ \left\{ a_{ji}^{n-1, n} \right\}_{j=1,\ldots,N_n} $
+\form#86:$ N_n $
+\form#87:$ N_{n-1} $
+\form#88:\[ h = \begin{pmatrix} \phantom{a_x} & \phantom{b_x} & \phantom{c_x} \\ \vec{\mathbf{a}} & \vec{\mathbf{b}} & \vec{\mathbf{c}} \\ \phantom{a_z} & \phantom{b_z} & \phantom{c_z} \\ \end{pmatrix} = \begin{pmatrix} a_x & b_x & c_x \\ a_y & b_y & c_y \\ a_z & b_z & c_z \\ \end{pmatrix}, \]
+\form#89:$\vec{\mathbf{a}} = $
+\form#90:$\vec{\mathbf{b}} = $
+\form#91:$\vec{\mathbf{c}} = $
+\form#92:\[ h = \begin{pmatrix} \texttt{box[0][0]} & \texttt{box[1][0]} & \texttt{box[2][0]} \\ \texttt{box[0][1]} & \texttt{box[1][1]} & \texttt{box[2][1]} \\ \texttt{box[0][2]} & \texttt{box[1][2]} & \texttt{box[2][2]} \\ \end{pmatrix}. \]
+\form#93:\[ \begin{pmatrix} f_0 \\ f_1 \\ f_2 \end{pmatrix} = h^{-1} \; \vec{\mathbf{r}}. \]
+\form#94:$S_\text{min}$
+\form#95:$S_\text{max}$
+\form#96:$G_\text{scaled} = G$
+\form#97:$G_\text{scaled} = S_\text{min} + \left(S_\text{max} - S_\text{min}\right) \cdot \frac{G - G_\text{min}} {G_\text{max} - G_\text{min}} $
+\form#98:$G_\text{scaled} = G - \left<G\right>$
+\form#99:$G_\text{scaled} = S_\text{min} + \left(S_\text{max} - S_\text{min}\right) \cdot \frac{G - \left<G\right>} {G_\text{max} - G_\text{min}} $
+\form#100:$G_\text{scaled} = S_\text{min} + \left(S_\text{max} - S_\text{min}\right) \cdot \frac{G - \left<G\right>}{\sigma_G} $
+\form#101:\[ G^3_i = 2^{1-\zeta} \sum_{\substack{j,k\neq i \\ j < k}} \left( 1 + \lambda \cos \theta_{ijk} \right)^\zeta \mathrm{e}^{-\eta( (r_{ij}-r_s)^2 + (r_{ik}-r_s)^2 + (r_{jk}-r_s)^2 ) } f_c(r_{ij}) f_c(r_{ik}) f_c(r_{jk}) \]
+\form#102:$\eta$
+\form#103:$\lambda$
+\form#104:$\zeta$
+\form#105:$r_s = 0$
+\form#106:$\left(e^{-\eta r^2} f_c(r)\right)^3$
+\form#107:\[ G^9_i = 2^{1-\zeta} \sum_{\substack{j,k\neq i \\ j < k}} \left( 1 + \lambda \cos \theta_{ijk} \right)^\zeta \mathrm{e}^{-\eta( (r_{ij}-r_s)^2 + (r_{ik}-r_s)^2 ) } f_c(r_{ij}) f_c(r_{ik}) \]
+\form#108:$\left(e^{-\eta r^2} f_c(r)\right)^2$
+\form#109:\[ G^{12}_i = \sum_{j \neq i} Z_j \mathrm{e}^{-\eta(r_{ij} - r_\mathrm{s})^2} f_c(r_{ij}) \]
+\form#110:$r_\mathrm{s}$
+\form#111:$ e^{-\eta (r - r_s)^2} f_c(r)$
+\form#112:$\left(e^{-\eta (r - r_s)^2} f_c(r)\right)^3$
