@@ -47,10 +47,8 @@ DEBUG=${PROJECT_DEBUG}
 INCLUDES=-I./ -I${PROJECT_INCLUDE}/ -I${PROJECT_GSL}
 
 # Extra flags for shared and static linking.
-LDFLAGS_SHARED=-L${PROJECT_LIB} -lnnptrain -lnnp\
-               -L${PROJECT_GSL_LIB} -lgsl ${PROJECT_LDFLAGS_BLAS}
-LDFLAGS_STATIC=${PROJECT_LIB}/libnnptrain.a ${PROJECT_LIB}/libnnp.a \
-               -L${PROJECT_GSL_LIB} -lgsl ${PROJECT_LDFLAGS_BLAS}
+LDFLAGS_SHARED=-L${PROJECT_LIB} -lnnptrain -lnnp -lgsl ${PROJECT_LDFLAGS_BLAS}
+LDFLAGS_STATIC=${PROJECT_LIB}/libnnptrain.a ${PROJECT_LIB}/libnnp.a -lgsl ${PROJECT_LDFLAGS_BLAS}
 
 
 ###############################################################################

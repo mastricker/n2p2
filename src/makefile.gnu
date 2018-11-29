@@ -5,11 +5,8 @@
 ###############################################################################
 # Enter here paths to GSL or EIGEN if they are not in your standard include
 # path. DO NOT completely remove the entry, leave at least "./".
-PROJECT_GSL=${GSL_ROOT}/include   #./ #usr/lib/x86_64-linux-gnu
-PROJECT_GSL_LIB=${GSL_ROOT}/lib
-PROJECT_EIGEN=${EIGEN_ROOT}/include/eigen3 #./ #usr/include/eigen3
-PROJECT_BLAS=${OPENBLAS_ROOT}/include
-PROJECT_BLAS_LIB=${OPENBLAS_ROOT}/lib
+PROJECT_GSL=/usr/lib/x86_64-linux-gnu #libgsl.so.23 #./
+PROJECT_EIGEN=/usr/include/eigen3 #${HOME}/local/src/eigen-eigen-5a0156e40feb
 
 ###############################################################################
 # COMPILERS AND FLAGS
@@ -22,7 +19,7 @@ PROJECT_DEBUG=-g -pedantic-errors -Wall -Wextra
 PROJECT_AR=ar
 PROJECT_ARFLAGS=-rcsv
 PROJECT_CFLAGS_BLAS=
-PROJECT_LDFLAGS_BLAS= -L${PROJECT_BLAS_LIB} -lopenblas
+PROJECT_LDFLAGS_BLAS=-lblas
 
 ###############################################################################
 # COMPILE-TIME OPTIONS
