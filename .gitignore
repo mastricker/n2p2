@@ -3,5 +3,6 @@ build/
 include/
 *.o
 *.a
+*.so
 src/application/
 *~
