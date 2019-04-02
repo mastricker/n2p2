@@ -118,7 +118,7 @@ public:
      * @param[in] fileNameForcesTest File name for test forces comparison file.
      */
     void                  calculateRmse(bool const        writeCompFiles,
-                                        std::string const identifier           
+                                        std::string const identifier
                                             = "",
                                         std::string const fileNameEnergiesTrain
                                             = "energies-train.comp",
@@ -278,7 +278,7 @@ private:
     bool                         freeMemory;
     /// Whether training log file is written.
     bool                         writeTrainingLog;
-    /// Kalman filter stream of this processor. 
+    /// Kalman filter stream of this processor.
     std::size_t                  myStream;
     /// Number of Kalman filter streams.
     std::size_t                  numStreams;
@@ -350,6 +350,9 @@ private:
     /// Schedule for varying selection mode.
     std::map<std::size_t,
              SelectionMode>      selectionModeSchedule;
+
+    /// Energy update weight for different loss function strategy
+    double energyWeight;
 
     /** Check if training loop should be continued.
      *

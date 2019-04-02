@@ -92,6 +92,11 @@ struct Structure
     /// Vector of all atoms in this structure.
     std::vector<Atom>        atoms;
 
+    /// Minimum energy of all structures for different loss function
+    double energyMin;
+    /// Energy delta for scaling low energy structures
+    double energyDelta;
+
     /** Constructor, initializes to zero.
      */
     Structure();
