@@ -84,6 +84,7 @@ map<string, string> const createKnownKeywordsMap()
     m["kalman_nue_short"              ] = "";
     m["memorize_symfunc_results"      ] = "";
     m["force_weight"                  ] = "";
+    m["energy_weight"                 ] = "";
 
     return m;
 }

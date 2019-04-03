@@ -378,6 +378,16 @@ void Training::setupTraining()
            "**************************************\n";
     log << "\n";
 
+    if (settings.keywordExists("force_weight"))
+    {
+        energyWeight = atof(settings["energy_weight"].c_str());
+    }
+    else
+    {
+        log << "WARNING: Energy weight not set, using default value of 1.0.\n";
+        energyWeight = 1.0;
+    }
+
     useForces = settings.keywordExists("use_short_forces");
     if (useForces)
     {
@@ -1109,7 +1119,7 @@ void Training::calculateRmse(bool const   writeCompFiles,
             {
                 fileEnergiesTrain << it->getEnergyLine();
             }
-            
+
         }
         else if (it->sampleType == Structure::ST_TEST)
         {
@@ -1269,7 +1279,7 @@ void Training::writeLearningCurve(bool append, string const fileName) const
     ofstream file;
 
     if (append) file.open(fileName.c_str(), ofstream::app);
-    else 
+    else
     {
         file.open(fileName.c_str());
 
@@ -1472,7 +1482,7 @@ void Training::writeUpdaterStatus(bool         append,
                              elementMap.atomicNumber(i));
         }
         if (append) file.open(fileName.c_str(), ofstream::app);
-        else 
+        else
         {
             file.open(fileName.c_str());
             appendLinesToFile(file, updaters.at(i)->statusHeader());

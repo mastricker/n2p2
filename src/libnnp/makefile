@@ -127,6 +127,6 @@ clean-shared:
 	$(RM) ${DLIB}
 
 clean-headers:
-	cd ${PROJECT_INCLUDE} && $(RM) ${HEADERS} 
+	cd ${PROJECT_INCLUDE} && $(RM) ${HEADERS}
 
 rebuild: clean all
