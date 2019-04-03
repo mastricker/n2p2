@@ -381,6 +381,7 @@ void Training::setupTraining()
     if (settings.keywordExists("force_weight"))
     {
         energyWeight = atof(settings["energy_weight"].c_str());
+        log << "Energy weight set\n";
     }
     else
     {

@@ -698,7 +698,7 @@ int Dataset::distributeStructures(bool          randomize,
         vector<size_t> countStructuresPerProc;
 
         countStructuresPerProc.resize(numProcs, 0);
-        
+
         if (randomize)
         {
             while (countStructures < numStructures)
@@ -788,7 +788,7 @@ void Dataset::toNormalizedUnits()
     {
         it->toNormalizedUnits(meanEnergy, convEnergy, convLength);
     }
-    
+
     return;
 }
 
@@ -799,7 +799,7 @@ void Dataset::toPhysicalUnits()
     {
         it->toPhysicalUnits(meanEnergy, convEnergy, convLength);
     }
-    
+
     return;
 }
 
@@ -911,6 +911,9 @@ void Dataset::writeSymmetryFunctionHistograms(size_t numBins,
         {
             double l = safeFind(it->statistics.data, i).min;
             double h = safeFind(it->statistics.data, i).max;
+            /// avoid gsl error if using one very small structure
+            double d = h-l;
+            if (d < 1e-6) { h += 1e-14;}
             // Add an extra bin at the end to cover complete range.
             h += (h - l) / numBins;
             histograms.back().push_back(gsl_histogram_alloc(numBins + 1));
@@ -1223,4 +1226,3 @@ void Dataset::combineFiles(string filePrefix) const
 
     return;
 }
-

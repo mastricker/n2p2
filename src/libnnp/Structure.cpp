@@ -199,7 +199,7 @@ void Structure::calculateNeighborList(double cutoffRadius)
         calculatePbcCopies(cutoffRadius);
 
         // Use square of cutoffRadius (faster).
-        cutoffRadius *= cutoffRadius;
+        double cutoffRadiusSquare = cutoffRadius*cutoffRadius;
 
         size_t i = 0;
 #ifdef _OPENMP
@@ -224,7 +224,7 @@ void Structure::calculateNeighborList(double cutoffRadius)
                                          + bc0 * box[0]
                                          + bc1 * box[1]
                                          + bc2 * box[2];
-                                if (dr.norm2() <= cutoffRadius)
+                                if (dr.norm2() <= cutoffRadiusSquare)
                                 {
                                     atoms[i].neighbors.
                                         push_back(Atom::Neighbor());
@@ -261,7 +261,7 @@ void Structure::calculateNeighborList(double cutoffRadius)
     else
     {
         // Use square of cutoffRadius (faster).
-        cutoffRadius *= cutoffRadius;
+        double cutoffRadiusSquare = cutoffRadius*cutoffRadius;
 
         size_t i = 0;
 #ifdef _OPENMP
@@ -277,7 +277,7 @@ void Structure::calculateNeighborList(double cutoffRadius)
                 if (i != j)
                 {
                     Vec3D dr = atoms[i].r - atoms[j].r;
-                    if (dr.norm2() <= cutoffRadius)
+                    if (dr.norm2() <= cutoffRadiusSquare)
                     {
                         atoms[i].neighbors.push_back(Atom::Neighbor());
                         atoms[i].neighbors.back().index   = j;
@@ -331,15 +331,16 @@ void Structure::calculatePbcCopies(double cutoffRadius)
     pbc[0] = 0;
     pbc[1] = 0;
     pbc[2] = 0;
-    while (pbc[0] * proja <= cutoffRadius)
+
+    while (pbc[0] * proja < cutoffRadius)
     {
         pbc[0]++;
     }
-    while (pbc[1] * projb <= cutoffRadius)
+    while (pbc[1] * projb < cutoffRadius)
     {
         pbc[1]++;
     }
-    while (pbc[2] * projc <= cutoffRadius)
+    while (pbc[2] * projc < cutoffRadius)
     {
         pbc[2]++;
     }
