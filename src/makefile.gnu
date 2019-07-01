@@ -22,7 +22,7 @@ PROJECT_DEBUG=-g -pedantic-errors -Wall -Wextra
 PROJECT_AR=ar
 PROJECT_ARFLAGS=-rcsv
 PROJECT_CFLAGS_BLAS=
-PROJECT_LDFLAGS_BLAS= -L${PROJECT_BLAS_LIB} -lopenblas
+PROJECT_LDFLAGS_BLAS= -I${PROJECT_BLAS} -L${PROJECT_BLAS_LIB} -lopenblas
 
 ###############################################################################
 # COMPILE-TIME OPTIONS
