@@ -61,7 +61,7 @@ struct Atom
          * coordinate @f$ \alpha = x,y,z @f$ of neighbor atom @f$ j @f$,
          * necessary for force calculation.
          */
-        std::vector<Vec3D>         dGdr;
+        std::vector<Vec3D> dGdr;
 
         /** Neighbor constructor, initialize to zero.
          */

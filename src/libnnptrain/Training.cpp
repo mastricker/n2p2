@@ -381,12 +381,21 @@ void Training::setupTraining()
     if (settings.keywordExists("force_weight"))
     {
         energyWeight = atof(settings["energy_weight"].c_str());
-        log << "Energy weight set\n";
     }
     else
     {
         log << "WARNING: Energy weight not set, using default value of 1.0.\n";
         energyWeight = 1.0;
+    }
+
+    if (settings.keywordExists("deltaE"))
+    {
+        deltaEnergy = atof(settings["delta_e"].c_str());
+    }
+    else
+    {
+        log << "WARNING: Energy weight not set, using default value of 1.0.\n";
+        deltaEnergy = 1.0;
     }
 
     useForces = settings.keywordExists("use_short_forces");

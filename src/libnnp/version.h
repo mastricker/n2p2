@@ -18,8 +18,8 @@
 #define VERSION_H
 
 #define NNP_VERSION "2.0.0"
-#define NNP_GIT_REV "de731e0c2584e0defd6a688ea8f5913705e57ad3"
-#define NNP_GIT_REV_SHORT "de731e0"
+#define NNP_GIT_REV "cef7e86aac80a239d99e03f6cd28e0f77a0b9f72"
+#define NNP_GIT_REV_SHORT "cef7e86"
 #define NNP_GIT_BRANCH "feat_drautz_loss_function"
 
 #endif

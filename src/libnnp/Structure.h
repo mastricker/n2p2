@@ -222,6 +222,7 @@ struct Structure
      *
      * @param[in,out] rmse Input RMSE to be updated.
      * @param[in,out] count Input counter to be updated.
+     * @param[in,out] delta_energy for loss function update small structure scaling
      */
     void                     updateRmseEnergy(double&      rmse,
                                               std::size_t& count) const;

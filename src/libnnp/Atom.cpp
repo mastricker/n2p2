@@ -172,7 +172,7 @@ void Atom::allocate(bool all)
         for (vector<Neighbor>::iterator it = neighbors.begin();
              it != neighbors.end(); ++it)
         {
-            it->dGdr.resize(numSymmetryFunctions);
+          it->dGdr.resize(numSymmetryFunctions);
         }
     }
 

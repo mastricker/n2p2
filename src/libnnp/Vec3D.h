@@ -28,7 +28,7 @@ namespace nnp
 struct Vec3D
 {
     /// cartesian coordinates.
-    double r[3];
+  double r[3];
 
     /** Constructor, initializes to zero.
      */

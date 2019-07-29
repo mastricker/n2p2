@@ -353,6 +353,8 @@ private:
 
     /// Energy update weight for different loss function strategy
     double energyWeight;
+    /// delta Energy for an absolute scale for different loss function strategy
+    double deltaEnergy;
 
     /** Check if training loop should be continued.
      *

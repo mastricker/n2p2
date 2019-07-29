@@ -256,7 +256,10 @@ void Structure::calculateNeighborList(double cutoffRadius)
                 }
             }
             atoms[i].hasNeighborList = true;
+            std::cout << "Atom number of neighbors " << atoms[i].numNeighbors
+                      << std::endl;
         }
+
     }
     else
     {
@@ -344,6 +347,8 @@ void Structure::calculatePbcCopies(double cutoffRadius)
     {
         pbc[2]++;
     }
+
+    std::cout << "pbc " << pbc[0] << " " << pbc[1]<< " " << pbc[2] << std::endl;
 
     return;
 }
@@ -534,11 +539,15 @@ void Structure::clearNeighborList()
     return;
 }
 
-void Structure::updateRmseEnergy(double& rmse, size_t& count) const
+void Structure::updateRmseEnergy(double &rmse, size_t &count) const
 {
     count++;
     rmse += (energyRef - energy) * (energyRef - energy)
           / (numAtoms * numAtoms);
+
+    // rmse += (energyRef - energy) * (energyRef - energy) /
+    //         (numAtoms * numAtoms) /
+    //         (energyRef - energyMin - energyDelta);
 
     return;
 }

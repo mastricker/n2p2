@@ -251,4 +251,3 @@ vector<string> SymmetryFunctionGroupRadial::parameterLines() const
 
     return v;
 }
-

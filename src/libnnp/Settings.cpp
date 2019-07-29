@@ -85,6 +85,7 @@ map<string, string> const createKnownKeywordsMap()
     m["memorize_symfunc_results"      ] = "";
     m["force_weight"                  ] = "";
     m["energy_weight"                 ] = "";
+    m["delta_energy"                  ] = "";
 
     return m;
 }

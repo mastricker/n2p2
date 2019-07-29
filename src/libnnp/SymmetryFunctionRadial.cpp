@@ -166,6 +166,7 @@ void SymmetryFunctionRadial::calculate(Atom&      atom,
                 * pfc) * pexp / rij;
             Vec3D dij = p1 * n.dr;
             // Save force contributions in Atom storage.
+            //todo(mst) this variable `index` is not initialized?
             atom.dGdr[index] += dij;
             n.dGdr[index]    -= dij;
         }
