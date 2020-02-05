@@ -6,3 +6,6 @@ include/
 *.so
 src/application/
 *~
+*.out
+*.data
+*.log.*
