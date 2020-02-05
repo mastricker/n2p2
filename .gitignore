@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 bin/
 build/
 include/
@@ -9,3 +10,23 @@ src/application/
 *.out
 *.data
 *.log.*
+=======
+build*/
+*.o
+*~
+bin/
+include/
+lib/
+src/application/nnp-comp2/nnp-comp2
+src/application/nnp-convert/nnp-convert
+src/application/nnp-cutoff/nnp-cutoff
+src/application/nnp-dataset/nnp-dataset
+src/application/nnp-dist/nnp-dist
+src/application/nnp-norm/nnp-norm
+src/application/nnp-predict/nnp-predict
+src/application/nnp-prune/nnp-prune
+src/application/nnp-scaling/nnp-scaling
+src/application/nnp-select/nnp-select
+src/application/nnp-symfunc/nnp-symfunc
+src/application/nnp-train/nnp-train
+>>>>>>> 2a3b6c732446a214b164e9ad883456dd67a0da6b
