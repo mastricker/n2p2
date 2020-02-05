@@ -5,35 +5,30 @@
 ###############################################################################
 # Enter here paths to GSL or EIGEN if they are not in your standard include
 # path. DO NOT completely remove the entry, leave at least "./".
-<<<<<<< HEAD
+
 PROJECT_GSL=/usr/lib/x86_64-linux-gnu #libgsl.so.23 #./
 PROJECT_EIGEN=/usr/include/eigen3 #${HOME}/local/src/eigen-eigen-5a0156e40feb
-=======
-PROJECT_GSL=${GSL_ROOT}/include #/usr/lib/x86_64-linux-gnu #libgsl.so.23 #./
-PROJECT_GSL_LIB=${GSL_ROOT}/lib
 
-PROJECT_EIGEN=${EIGEN_ROOT}/include/eigen3 #${HOME}/local/src/eigen-eigen-5a0156e40feb
+# PROJECT_GSL=./
+# PROJECT_EIGEN=/usr/include/eigen3/
 
-PROJECT_BLAS=${OPENBLAS_ROOT}/include
-PROJECT_BLAS_LIB=${OPENBLAS_ROOT}/lib
->>>>>>> 2a3b6c732446a214b164e9ad883456dd67a0da6b
 
 ###############################################################################
 # COMPILERS AND FLAGS
 ###############################################################################
 PROJECT_CC=g++
 PROJECT_MPICC=mpic++
-PROJECT_CFLAGS=-O3 -march=native -std=c++11 -fopenmp
+#PROJECT_CFLAGS=-O3 -march=native -std=c++11 -fopenmp
+PROJECT_CFLAGS=-O3 -std=c++11 -fopenmp
 PROJECT_CFLAGS_MPI=-Wno-long-long
 PROJECT_DEBUG=-g -pedantic-errors -Wall -Wextra
+PROJECT_TEST=--coverage -fno-default-inline -fno-inline -fno-inline-small-functions -fno-elide-constructors
 PROJECT_AR=ar
 PROJECT_ARFLAGS=-rcsv
 PROJECT_CFLAGS_BLAS=
-# <<<<<<< HEAD
 PROJECT_LDFLAGS_BLAS= -I${PROJECT_BLAS} -L${PROJECT_BLAS_LIB} -lopenblas
 # =======
 # PROJECT_LDFLAGS_BLAS=-lblas
-# >>>>>>> 40d8b8886887ce46826dfd96c378146b193d626b
 
 ###############################################################################
 # COMPILE-TIME OPTIONS
@@ -64,4 +59,7 @@ PROJECT_OPTIONS+= -DEIGEN_USE_BLAS
 #PROJECT_OPTIONS+= -DEIGEN_USE_MKL_ALL
 
 # Disable Eigen multi threading.
-OPTIONS+= -DEIGEN_DONT_PARALLELIZE
+PROJECT_OPTIONS+= -DEIGEN_DONT_PARALLELIZE
+
+# Use improved memory layout for symmetry function derivatives.
+PROJECT_OPTIONS+= -DIMPROVED_SFD_MEMORY
